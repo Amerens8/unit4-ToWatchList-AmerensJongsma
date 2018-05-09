@@ -3,7 +3,6 @@
 //  ToDoList
 //
 //  Created by Amerens Geeske Jongsma on 09/05/2018.
-//  Copyright © 2018 Amerens Jongsma. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +10,7 @@ import UIKit
     func checkmarkTapped(sender: ToWatchCell)
 }
 
-
+// creating a new class for the prototype cells
 class ToWatchCell: UITableViewCell {
     var delegate: ToWatchCellDelegate?
 
@@ -21,12 +20,10 @@ class ToWatchCell: UITableViewCell {
     //outlet connection to the text LABEL
     @IBOutlet weak var titleLabel: UILabel!
     
-    
+    // outlet action in the case when the check button is touched/tapped
     @IBAction func completeButtonTapped() {
         delegate?.checkmarkTapped(sender: self)
     }
-    
 
-    
 }
 

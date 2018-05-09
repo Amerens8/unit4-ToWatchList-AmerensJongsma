@@ -3,7 +3,6 @@
 //  ToDoList
 //
 //  Created by Amerens Geeske Jongsma on 06/05/2018.
-//  Copyright © 2018 Amerens Jongsma. All rights reserved.
 //
 
 import Foundation

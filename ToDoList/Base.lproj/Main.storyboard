@@ -79,7 +79,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6si-g2-eov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="17.541229385307346"/>
+            <point key="canvasLocation" x="1324" y="32"/>
         </scene>
         <!--New Movies to Watch-->
         <scene sceneID="TH5-XS-swr">
@@ -192,10 +192,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TPN-Wg-ToE">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Kameleon" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TPN-Wg-ToE">
                                                     <rect key="frame" x="16" y="0.0" width="312" height="199.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -240,7 +239,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sm-pg-aoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="P1e-hu-gC9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2672.8000000000002" y="59.820089955022496"/>
+            <point key="canvasLocation" x="2676" y="32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lk9-is-hL6">
@@ -256,7 +255,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI8-ua-tsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="724"/>
+            <point key="canvasLocation" x="1847" y="831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p04-SW-BPT">

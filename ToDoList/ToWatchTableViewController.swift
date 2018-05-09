@@ -3,7 +3,6 @@
 //  ToDoList
 //
 //  Created by Amerens Geeske Jongsma on 06/05/2018.
-//  Copyright © 2018 Amerens Jongsma. All rights reserved.
 //
 
 import UIKit
@@ -11,14 +10,12 @@ import UIKit
 // subclass to display collection of model
 class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
 
-    
+    // creating variable of type class ToWatch
     var towatch = [ToWatch]()
 
-    
     // function to show initial input movies
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.leftBarButtonItem = editButtonItem
 
         if let savedToWatch = ToWatch.loadToWatch() {
@@ -29,7 +26,6 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         tableView.reloadData()
     }
 
-
     // override methods to show data
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int
@@ -37,6 +33,7 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         return towatch.count
     }
     
+    // method to dequeue cells for new movies
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToWatchCellIdentifier") as? ToWatchCell else {
             fatalError("Could not dequeue a cell")
@@ -44,32 +41,13 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         
         // when cell dequeued, set self as cell's delegate
         cell.delegate = self
-        print("in funct")
         let watch = towatch[indexPath.row]
-        print(watch.title)
         cell.titleLabel?.text = watch.title
         cell.isCompleteButton.isSelected = watch.isComplete
         return cell
-        
     }
     
-    
-    // making the date picker small when not clicked on yet
-    var isEndDatePickerHidden = false
-    override func tableView(_ tableView: UITableView, didSelectRowAt
-        indexPath: IndexPath) {
-        switch (indexPath) {
-        case [1,0]:
-            isEndDatePickerHidden = !isEndDatePickerHidden
-//            dueDateLabel.textColor = isEndDatePickerHidden ? .black : tableView.tintColor
-            
-            tableView.beginUpdates()
-            tableView.endUpdates()
-        default: break
-        }
-    }
-    
-   
+
     // adding swipe to delete functionality possibility
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -83,7 +61,7 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
             ToWatch.saveToWatch(towatch)
         }
     }
-    
+    // responding to segue when existing movie is clicked
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             let TowatchViewController = segue.destination as! ToWatchViewController
@@ -93,11 +71,9 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         }
     }
     
-    
-    
+
     // adding cells for new members
     @IBAction func unwindToToWatchList(segue: UIStoryboardSegue) {
-        
         guard segue.identifier == "saveUnwind" else { return }
         let sourceViewController = segue.source as! ToWatchViewController
         
@@ -114,6 +90,7 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         ToWatch.saveToWatch(towatch)
     }
     
+    // function to check whether mark is tapped and save movies
     func checkmarkTapped(sender: ToWatchCell) {
         if let indexPath = tableView.indexPath(for: sender) {
             var watch = towatch[indexPath.row]
@@ -123,7 +100,5 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
             ToWatch.saveToWatch(towatch)
         }
     }
-    
-
 }
 
