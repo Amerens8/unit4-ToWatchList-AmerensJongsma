@@ -21,7 +21,7 @@ class ToWatchCell: UITableViewCell {
     //outlet connection to the text LABEL
     @IBOutlet weak var titleLabel: UILabel!
     
-
+    
     @IBAction func completeButtonTapped() {
         delegate?.checkmarkTapped(sender: self)
     }

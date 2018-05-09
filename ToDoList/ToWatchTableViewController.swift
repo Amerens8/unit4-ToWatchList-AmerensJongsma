@@ -44,8 +44,9 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         
         // when cell dequeued, set self as cell's delegate
         cell.delegate = self
-        
+        print("in funct")
         let watch = towatch[indexPath.row]
+        print(watch.title)
         cell.titleLabel?.text = watch.title
         cell.isCompleteButton.isSelected = watch.isComplete
         return cell
@@ -68,11 +69,7 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         }
     }
     
-    
- 
-    
-
-    
+   
     // adding swipe to delete functionality possibility
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -127,17 +124,6 @@ class ToWatchTableViewController: UITableViewController, ToWatchCellDelegate {
         }
     }
     
-//    func completeButtonTapped(sender: ToWatchCell) {
-//        if let indexPath = tableView.indexPath(for: sender) {
-//            let watch = towatch[indexPath.row]
-//            watch.isComplete = !watch.isComplete
-//            tableView.reloadRows(at: [indexPath], with: .automatic)
-//            ToWatch.saveToWatch(towatch)
-//        }
-//    }
-    
-    
-
 
 }
 
