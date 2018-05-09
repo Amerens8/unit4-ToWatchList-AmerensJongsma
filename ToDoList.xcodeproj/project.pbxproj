@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F125854A20A1C99A00BDD831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F125854920A1C99A00BDD831 /* Assets.xcassets */; };
+		F125854C20A264F900BDD831 /* ToWatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125854B20A264F900BDD831 /* ToWatchCell.swift */; };
+		F125854E20A2F9FB00BDD831 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = F125854D20A2F9FB00BDD831 /* doc */; };
+		F125855020A2FA0200BDD831 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F125854F20A2FA0200BDD831 /* README.md */; };
 		F19764B7209FA69D006ABCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764B6209FA69D006ABCDD /* AppDelegate.swift */; };
-		F19764B9209FA69D006ABCDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764B8209FA69D006ABCDD /* ViewController.swift */; };
 		F19764BC209FA69D006ABCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19764BA209FA69D006ABCDD /* Main.storyboard */; };
-		F19764BE209FA6A3006ABCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19764BD209FA6A3006ABCDD /* Assets.xcassets */; };
 		F19764C1209FA6A3006ABCDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19764BF209FA6A3006ABCDD /* LaunchScreen.storyboard */; };
+		F19764C9209FA979006ABCDD /* ToWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764C8209FA979006ABCDD /* ToWatch.swift */; };
+		F19764CB209FAAB0006ABCDD /* ToWatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764CA209FAAB0006ABCDD /* ToWatchTableViewController.swift */; };
+		F1AF5CD920A0810400F7206D /* ToWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF5CD820A0810400F7206D /* ToWatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F125854920A1C99A00BDD831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F125854B20A264F900BDD831 /* ToWatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWatchCell.swift; sourceTree = "<group>"; };
+		F125854D20A2F9FB00BDD831 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		F125854F20A2FA0200BDD831 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F19764B3209FA69D006ABCDD /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19764B6209FA69D006ABCDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F19764B8209FA69D006ABCDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F19764BB209FA69D006ABCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F19764BD209FA6A3006ABCDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19764C0209FA6A3006ABCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19764C2209FA6A3006ABCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19764C8209FA979006ABCDD /* ToWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWatch.swift; sourceTree = "<group>"; };
+		F19764CA209FAAB0006ABCDD /* ToWatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWatchTableViewController.swift; sourceTree = "<group>"; };
+		F1AF5CD820A0810400F7206D /* ToWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +64,15 @@
 		F19764B5209FA69D006ABCDD /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				F125854F20A2FA0200BDD831 /* README.md */,
+				F125854D20A2F9FB00BDD831 /* doc */,
 				F19764B6209FA69D006ABCDD /* AppDelegate.swift */,
-				F19764B8209FA69D006ABCDD /* ViewController.swift */,
 				F19764BA209FA69D006ABCDD /* Main.storyboard */,
-				F19764BD209FA6A3006ABCDD /* Assets.xcassets */,
+				F19764CA209FAAB0006ABCDD /* ToWatchTableViewController.swift */,
+				F125854B20A264F900BDD831 /* ToWatchCell.swift */,
+				F19764C8209FA979006ABCDD /* ToWatch.swift */,
+				F1AF5CD820A0810400F7206D /* ToWatchViewController.swift */,
+				F125854920A1C99A00BDD831 /* Assets.xcassets */,
 				F19764BF209FA6A3006ABCDD /* LaunchScreen.storyboard */,
 				F19764C2209FA6A3006ABCDD /* Info.plist */,
 			);
@@ -123,7 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19764C1209FA6A3006ABCDD /* LaunchScreen.storyboard in Resources */,
-				F19764BE209FA6A3006ABCDD /* Assets.xcassets in Resources */,
+				F125854E20A2F9FB00BDD831 /* doc in Resources */,
+				F125855020A2FA0200BDD831 /* README.md in Resources */,
+				F125854A20A1C99A00BDD831 /* Assets.xcassets in Resources */,
 				F19764BC209FA69D006ABCDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19764B9209FA69D006ABCDD /* ViewController.swift in Sources */,
+				F19764C9209FA979006ABCDD /* ToWatch.swift in Sources */,
+				F19764CB209FAAB0006ABCDD /* ToWatchTableViewController.swift in Sources */,
+				F125854C20A264F900BDD831 /* ToWatchCell.swift in Sources */,
 				F19764B7209FA69D006ABCDD /* AppDelegate.swift in Sources */,
+				F1AF5CD920A0810400F7206D /* ToWatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
